@@ -165,6 +165,7 @@ void LatexPrinter<SolType>::printSolution(std::string filename, AbstractSolution
 
 	myfile.close();
 
+	// LaTeX Config: Adapt commands 
 	std::string close_command = "cd C:\\Program Files\\Tracker Software\\PDF Viewer && \"PDFXCview.exe\" /close \"" + Configurator::getInstance().outpath + "\\\\" + Configurator::getInstance().texfile + ".pdf\"";
 	std::cout << close_command << std::endl;
 	system(close_command.c_str());
